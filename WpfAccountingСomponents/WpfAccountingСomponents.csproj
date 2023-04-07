@@ -89,6 +89,10 @@
     <Compile Include="Departments.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="Pages\EditUserPage.xaml.cs">
+      <DependentUpon>EditUserPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Equipment.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
@@ -104,12 +108,19 @@
     <Compile Include="Staff.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
     <Compile Include="TypesOfEquipment.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
+    <Page Include="Pages\EditUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -132,6 +143,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

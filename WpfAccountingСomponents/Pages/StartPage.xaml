@@ -1,0 +1,42 @@
+﻿<Page x:Class="WpfAccountingСomponents.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfAccountingСomponents"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StartPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="386*"/>
+            <ColumnDefinition Width="207*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <Button Content="Журнал выдачи" 
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+            Margin="10" Height="40"/>
+            <Button Content="Выдать" 
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+            Margin="10" Height="40" />
+            <Button Content="Принять" 
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+            Margin="10" Height="40" />
+            <Button Content="Добавить пользователя" 
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+            Margin="10" Height="40" Click="Button_Click" />
+            <Button Content="Добавить оборудывание" 
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+            Margin="10" Height="40" />
+        </StackPanel>
+
+    </Grid>
+</Page>

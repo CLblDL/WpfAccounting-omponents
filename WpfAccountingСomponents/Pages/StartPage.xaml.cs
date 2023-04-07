@@ -16,15 +16,18 @@ using System.Windows.Shapes;
 namespace WpfAccountingСomponents
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для StartPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartPage : Page
     {
-        public MainWindow()
+        public StartPage()
         {
             InitializeComponent();
-            MainFrame.Navigate(new StartPage());
-            Manager.MainFrame = MainFrame;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new EditUserPage());
         }
     }
 }
