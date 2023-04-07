@@ -23,7 +23,7 @@
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
             <Button Content="Журнал выдачи" 
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-            Margin="10" Height="40"/>
+            Margin="10" Height="40" Click="Button_Click_1"/>
             <Button Content="Выдать" 
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
             Margin="10" Height="40" />

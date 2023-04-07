@@ -89,6 +89,9 @@
     <Compile Include="Departments.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\IssueLog.xaml.cs">
+      <DependentUpon>IssueLog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Pages\EditUserPage.xaml.cs">
       <DependentUpon>EditUserPage.xaml</DependentUpon>
@@ -117,6 +120,10 @@
     <Compile Include="TypesOfEquipment.cs">
       <DependentUpon>DBaccounting.tt</DependentUpon>
     </Compile>
+    <Page Include="Pages\IssueLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\EditUserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

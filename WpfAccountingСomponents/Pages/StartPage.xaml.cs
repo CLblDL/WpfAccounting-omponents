@@ -29,5 +29,10 @@ namespace WpfAccountingСomponents
         {
             Manager.MainFrame.Navigate(new EditUserPage());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new IssueLog());
+        }
     }
 }
